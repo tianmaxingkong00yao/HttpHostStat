@@ -17,7 +17,7 @@ typedef void(*rbtree_insert_cb)(rbtree_node_t *root, rbtree_node_t *node, rbtree
 typedef struct
 {
 	rbtree_node_t *root;
-	rbtree_node_t *sentinel; /* 哨兵 */
+	rbtree_node_t *sentinel;
 	rbtree_insert_cb insert;
 } rbtree_t;
 
